@@ -73,3 +73,10 @@ html { font-size: 90%; }
 		color: #C9D7E6;
 	}
 		
+.greyout {
+	filter: saturate(33%);
+-webkit-filter: saturate(33%);
+-moz-filter: saturate(33%);
+-o-filter: saturate(33%);
+-ms-filter: saturate(33%);
+}

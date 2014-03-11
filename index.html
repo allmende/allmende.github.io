@@ -1,64 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset=utf-8 />
-	<title>allmende.io</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Grid</title>
+        <meta name="description" content="allmende.io mapping the commons : self-organization stack prototype">
 
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/grid.css">
-	<link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-	<div class="container">
-		<div style="background: #4C7CAB; padding: 5%;">
-			<h1>allmende.io</h1>
-			<h2>mapping the commons : self-organization stack prototype</h2>
-		</div>
-		<div class="grid">
-			<div class="grid element box">
-				<a href="http://ting.allmende.io" target="_blank"><img src="img/talk.png" />
-				<div class="link">ting</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://wiki.allmende.io" target="_blank"><img src="img/wiki.png" />
-				<div class="link">wiki</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://blog.allmende.io" target="_blank"><img src="img/blog.png" />
-				<div class="link">blog</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://list.allmende.io/cgi-bin/mailman/listinfo/maps" target="_blank"><img src="img/gear.png" />
-				<div class="link">list</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://chat.allmende.io" target="_blank"><img src="img/gear.png" />
-				<div class="link">chat</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://text.allmende.io" target="_blank"><img src="img/gear.png" />
-				<div class="link">text</div></a>
-			</div>
-			<div class="grid element box">
-				<a href="http://github.com/allmende/" target="_blank"><img src="img/gear.png" />
-				<div class="link">code</div></a>
-			</div>
-			<div class="grid element">
-				<a href="https://trello.com/allmende"><img src="img/plan.png" />
-				<div class="link">trlo</div></a>
-			</div>
-		</div>	
-	</div>
-		
-	<div class="row clearfix">
-		<h3 style="margin-bottom: 100px; text-align:center; padding: 5%;">
-			 <strong>allmende.io</strong> is about nodes and links. In a world of Organized Networks, where individuals collaborate with their peers to create a <a href="http://www.discourse.org/about/">Civilized Discourse Construction Kit"</a>, we aggreate tools that suit.
-		</h3>
-	</div>
-		
-	<div class="row clearfix">
-		<footer><a href="#">imprint</a></footer>
-	</div>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/grid.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!--[if lt IE 9]>
+          <script src="/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+    <header class="clearfix">
+        <div class='container'>
+            <div style="background: #4C7CAB; padding: 5%;">
+                <h1>allmende.io</h1>
+                <h2>mapping the commons : self-organization stack prototype</h2>
+            </div>
+        </div>
+    </header>
+
+    <div style="margin-bottom: 2%;">
+        <section>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="http://ting.allmende.io" target="_blank">
+                                <img src="img/talk.png">
+                            </a>
+                            <div>ting</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="http://wiki.allmende.io" target="_blank">
+                                <img src="img/wiki.png">
+                            </a>
+                            <div>wiki</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="#blog">
+                                <img src="img/blog.png">
+                            </a>
+                            <div>blog</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="http://list.allmende.io/cgi-bin/mailman/listinfo/maps" target="_blank">
+                                <img src="img/gear.png">
+                            </a>
+                            <div>list</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clearfix">
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="http://chat.allmende.io" target="_blank">
+                                <img src="img/gear.png">
+                            </a>
+                            <div>chat</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="#pads">
+                                <img src="img/gear.png">
+                            </a>
+                            <div>text</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="http://github.com/allmende/" target="_blank">
+                                <img src="img/gear.png">
+                            </a>
+                            <div>code</div>
+                        </div>
+                    </div>
+
+                    <div class="column fourth">
+                        <div class="link">
+                            <a href="https://trello.com/allmende">
+                                <img src="img/plan.png">
+                            </a>
+                            <div>trlo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="column full">
+                    <h3>
+                        <strong>allmende.io</strong> is about nodes and links. In a world of Organized Networks, where individuals collaborate with their peers to create a <a href="http://www.discourse.org/about/">Civilized Discourse Construction Kit"</a>, we aggreate tools that suit.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class='container'>
+
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="clearfix">
+            <a href="#">imprint</a>
+        </div>
+    </footer>
 </body>
 </html>

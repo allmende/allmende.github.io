@@ -36,7 +36,7 @@ html { font-size: 90%; }
 }
 
 body { margin:0; padding:0; color: #6A87A2 ; background: #fafafa; font-family: 'Open Sans';font-weight: 300;}
-h1 {text-align: center; font-weight: 400; color: #fefefe;}
+h1 {text-align: center; font-weight: 400; color: #fefefe; font-size: 50px;}
 h2 {text-align: center; font-weight: 200; color: #C9D7E6}
 
 .link {

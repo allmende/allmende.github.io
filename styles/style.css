@@ -50,24 +50,22 @@ a {
     text-decoration: underline;
 }
 
-.link a div { text-decoration: none; }
+.link a { text-decoration: none; }
 
 .link div {
     height:35px;
-    transition: font-size 0.3s 0.2s ease-in-out, font-weight 0.3s 0.2s ease-in-out;
-    -webkit-transition: font-size 0.3s 0.2s ease-in-out, font-weight 0.3s 0.2s ease-in-out;
-    -moz-transition: font-size 0.3s 0.2s ease-in-out, font-weight 0.3s 0.2s ease-in-out; 
-    -o-transition: font-size 0.3s 0.2s ease-in-out, font-weight 0.3s 0.2s ease-in-out; 
-    -ms-transition: font-size 0.3s 0.2s ease-in-out, font-weight 0.3s 0.2s ease-in-out; 
+    transition: font-size 0.3s 0.2s ease-in-out;
+    -webkit-transition: font-size 0.3s 0.2s ease-in-out;
+    -moz-transition: font-size 0.3s 0.2s ease-in-out; 
+    -o-transition: font-size 0.3s 0.2s ease-in-out; 
+    -ms-transition: font-size 0.3s 0.2s ease-in-out; 
 }
 
 
 
 .link:hover div {
     color: inherit;
-    text-decoration: none;
     font-size: 150%;
-    font-weight: 300;
 }
 
 footer {

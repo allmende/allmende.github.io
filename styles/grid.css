@@ -53,7 +53,7 @@ section {
 }
 
 @media (min-width: 40rem) {
-    section { padding: 4rem 0; }
+    section { padding: 2rem 0; }
 }
 
 footer {
@@ -75,9 +75,11 @@ footer {
 
 .column.full { width: 100%; }
 .column.fourth { width: 24.95%; }
+.column.third { width: 32.95%; }
 
 .row {
     margin-bottom:3%;
+    margin-top: 3%;
 }
 
 h1, h2, h3{

@@ -1,0 +1,19 @@
+{
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "version": "1.0.0",
+    "name" : "Allmende.io",
+    "tagLine" : "Contributing to the Computational Commons",
+    "description": "infrastructure for communication, organisation and information",
+    "homeUrl" : "https://allmende.io",
+    "logo" : "https://allmende.io/img/allmende.png",
+    "organizationType" : "computational common",
+    "communicationLanguages": ["de", "en", "fr"],
+    "contactUrl": "https://meta.allmende.io/c/allmende",
+    "privacyPolicyUrl" : "https://meta.allmende.io/privacy",
+    "termsOfServiceUrl" : "https://meta.allmende.io/tos",
+    "isServiceProvider" : true,
+    "foundingDate": "2014",
+    "dateCreated": "2014-03-07T06:00:00Z",
+    "dateModified": "2020-02-24T20:10:00Z"
+}

@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website
+  namespace: allmende
+spec:
+  selector:
+    matchLabels:
+      name: website
+  template:
+    metadata:
+      labels:
+        name: website
+    spec:
+      containers:
+      - image: docker.io/allmende/website:latest
+        imagePullPolicy: IfNotPresent
+        name: website
+        ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: website
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  namespace: allmende
+spec:
+  rules:
+  - host: libernetes.allmende.io
+    http:
+      paths:
+      - backend:
+          serviceName: website
+          servicePort: http
+        path: /
+  tls:
+  - hosts:
+    - libernetes.allmende.io
+    secretName: website-tls
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: website
+  namespace: allmende
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    name: website
+
